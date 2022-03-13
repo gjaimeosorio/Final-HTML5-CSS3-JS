@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto 1 formulario</title>
+    <link rel="stylesheet" href="../../css/punto1.css">
+    <link rel="icon" href="../../images/icon.png">
+</head>
+<body>
+    <div id="container" >
+        <form autocomplete="off" >
+            <div id="title" class="title">
+                <h1>Contactanos</h1>
+            </div>
+            <div>
+                <label for="username" >Nombre: </label>
+                <input type="text" class="box" placeholder="Ingrese su nombre" id="username" value="" />
+            </div>
+            <div>
+                <label for="email" >Email: </label>
+                <input type="email" class="box" placeholder="Ingrese su correo electrónico" id="email" value="" />
+            </div>
+            <div>
+                <label for="issue" >Asunto: </label>
+                <input type="text" class="box" placeholder="Ingrese el asunto" id="issue" value="" />
+            </div>
+            <div>
+                <label for="message" >Mensaje: </label>
+            </div>
+            <div>
+                <textarea class="box" id="message"></textarea>
+            </div>
+            <div class="buttons" id="buttons">
+                <input onclick="validateForm()" type="submit" id="button" value="Enviar" />
+                <button type="reset" class="delete" id="button" >Borrar</button>
+            </div>
+            <div class="back" id="back" >
+                <button type="button" onclick="window.location.href='/index.html'" id="button">Volver</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="../../scripts/punto1.js"></script>
+</body>
+</html>
